@@ -1,36 +1,36 @@
-# AS-IS / TO-BE Analysis
+# AS-IS / TO-BE
 
 ## AS-IS
 
-The source project materials describe typical work of a small nail studio before automation:
+В материалах проекта описан типичный процесс работы небольшой студии ногтевого сервиса до автоматизации:
 
-- appointments are handled through calls, messengers, spreadsheets or paper journals;
-- administrator manually checks schedule changes, free time and client requests;
-- client information can be distributed across several communication channels;
-- appointment overlaps may appear when schedule data is not updated in time;
-- material stock is difficult to control without a single accounting mechanism;
-- payroll calculations depend on manual counting of completed services and payout percentages;
-- management reports require manual preparation and data transfer.
+- записи обрабатываются через звонки, мессенджеры, таблицы или бумажные журналы;
+- администратор вручную проверяет изменения расписания, свободное время и запросы клиентов;
+- информация о клиентах может быть распределена между разными каналами связи;
+- при несвоевременном обновлении расписания появляются пересечения записей;
+- учет материалов затруднен без единого механизма контроля остатков;
+- начисления мастеров рассчитываются вручную по завершенным услугам и процентам выплат;
+- управленческие отчеты требуют ручной подготовки и переноса данных.
 
 ## TO-BE
 
-The designed system centralizes the same processes in one information system:
+Проектируемая система централизует эти процессы в одной информационной системе:
 
-- clients create online appointments through a web interface;
-- available time is calculated from shifts, breaks, existing appointments and workplace limits;
-- appointments are connected with client records, master schedules, services and analytics;
-- completed visits trigger automatic material write-off by technology cards;
-- payroll and KPI are calculated from completed appointments and master payout percentage;
-- dashboards and reports provide revenue, average check, workload, cancellations and export to PDF/Excel;
-- administrator, master and client work in role-specific areas.
+- клиенты создают онлайн-записи через веб-интерфейс;
+- доступное время рассчитывается по сменам, перерывам, существующим записям и лимитам рабочих мест;
+- записи связываются с клиентской базой, расписанием мастеров, услугами и аналитикой;
+- завершенные визиты запускают автоматическое списание материалов по технологическим картам;
+- начисления и KPI рассчитываются по завершенным записям и проценту выплаты мастера;
+- панели и отчеты показывают выручку, средний чек, загрузку, отмены и экспортируются в PDF/Excel;
+- администратор, мастер и клиент работают в отдельных ролевых зонах.
 
-## Change Summary
+## Сводка изменений
 
-| Process Area | Before Automation | After Automation |
+| Область процесса | До автоматизации | После автоматизации |
 | --- | --- | --- |
-| Booking | Manual processing and risk of duplicated records. | Web booking with centralized appointment creation. |
-| Scheduling | Manual checks of time and workload. | Automatic availability checks. |
-| Workplaces | Risk of exceeding actual manicure/pedicure capacity. | Separate workplace limits in salon settings. |
-| Materials | Manual or delayed stock updates. | Write-off after appointment completion. |
-| Payroll | Manual calculations and possible financial discrepancies. | Calculation from completed appointments. |
-| Analytics | Separate tables or manual reports. | Dashboard, KPI and exportable reports. |
+| Запись | Ручная обработка и риск дублирования данных. | Онлайн-запись с централизованным созданием записи. |
+| Расписание | Ручная проверка времени и загрузки. | Автоматическая проверка доступности. |
+| Рабочие места | Риск превышения фактической вместимости зон маникюра и педикюра. | Отдельные лимиты рабочих мест в настройках салона. |
+| Материалы | Ручное или запаздывающее обновление остатков. | Списание после завершения записи. |
+| Начисления | Ручные расчеты и риск финансовых расхождений. | Расчет по завершенным записям. |
+| Аналитика | Отдельные таблицы или ручные отчеты. | Панели, KPI и экспортируемые отчеты. |

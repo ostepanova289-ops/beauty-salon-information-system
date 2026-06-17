@@ -1,25 +1,25 @@
-# System Architecture
+# Архитектура системы
 
-The information system is implemented as a Laravel 12 web application.
+Информационная система реализована как веб-приложение на Laravel 12.
 
-## Architectural Approach
+## Архитектурный подход
 
-The application follows the MVC approach:
+Приложение построено по подходу MVC:
 
-- models represent database entities and relationships;
-- controllers process HTTP requests, validation and user actions;
-- Blade templates form the user interface.
+- модели представляют сущности базы данных и связи между ними;
+- контроллеры обрабатывают HTTP-запросы, валидацию и пользовательские действия;
+- Blade-шаблоны формируют пользовательский интерфейс.
 
-The application is divided into user areas:
+Приложение разделено на пользовательские зоны:
 
-- administrator panel;
-- master cabinet;
-- client cabinet;
-- public online booking flow.
+- административная панель;
+- личный кабинет мастера;
+- личный кабинет клиента;
+- публичный сценарий онлайн-записи.
 
-## Data Layer
+## Слой данных
 
-The project uses MySQL and Eloquent ORM. Main models include:
+В проекте используются MySQL и Eloquent ORM. Основные модели:
 
 - `Booking`;
 - `Client`;
@@ -32,12 +32,12 @@ The project uses MySQL and Eloquent ORM. Main models include:
 - `SalonSetting`;
 - `User`.
 
-Many-to-many relationships are represented through `booking_service`, `material_service` and `master_service`.
+Связи many-to-many представлены таблицами `booking_service`, `material_service` и `master_service`.
 
-## Access Control
+## Разграничение доступа
 
-Role-based access is implemented for administrator, master and client workflows. The project materials describe use of Laravel middleware and Spatie Laravel Permission.
+Ролевое разграничение используется для сценариев администратора, мастера и клиента. В материалах проекта описано использование middleware Laravel и пакета Spatie Laravel Permission.
 
-## Business Logic
+## Бизнес-логика
 
-Repeated business operations are separated into services, including material write-off, KPI calculation and report preparation. Appointment status changes trigger related operations such as material write-off and analytics updates.
+Повторяющиеся бизнес-операции вынесены в сервисный слой: списание материалов, расчет KPI и подготовка отчетов. Изменение статуса записи запускает связанные операции, например списание материалов и обновление аналитики.

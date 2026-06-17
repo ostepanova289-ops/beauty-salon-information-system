@@ -1,4 +1,4 @@
-# Beauty Salon Information System
+# Информационная система управления салоном красоты
 
 > Портфолио-проект бизнес / системного аналитика  
 > ВКР: информационная система управления салоном красоты на примере студии ногтевого сервиса
@@ -70,12 +70,10 @@
 | AS-IS / TO-BE | [`docs/requirements/as-is-to-be.md`](docs/requirements/as-is-to-be.md) |
 | Проектирование БД | [`docs/architecture/database-design.md`](docs/architecture/database-design.md) |
 | DFD онлайн-записи | [`diagrams/dfd/online-booking-dfd.png`](diagrams/dfd/online-booking-dfd.png) |
-| UML Use Case | [`diagrams/uml/use-case-diagram.png`](diagrams/uml/use-case-diagram.png) |
-| UML Sequence | [`diagrams/uml/online-booking-sequence.png`](diagrams/uml/online-booking-sequence.png) |
+| UML: диаграмма вариантов использования | [`diagrams/uml/use-case-diagram.png`](diagrams/uml/use-case-diagram.png) |
+| UML: диаграмма последовательности | [`diagrams/uml/online-booking-sequence.png`](diagrams/uml/online-booking-sequence.png) |
 | IDEF3 завершения записи и списания материалов | [`diagrams/idef3/booking-completion-material-writeoff.png`](diagrams/idef3/booking-completion-material-writeoff.png) |
 | ERD базы данных | [`diagrams/erd/database-erd.jpeg`](diagrams/erd/database-erd.jpeg) |
-
-Отдельная BPMN-диаграмма в приложенном документе ВКР отсутствует, поэтому она не добавлялась искусственно. В репозитории сохранены фактические модели из материалов проекта: DFD, UML, IDEF3 и ERD.
 
 ## AS-IS / TO-BE
 
@@ -145,35 +143,29 @@
 - лучший KPI;
 - мастер с максимальной выручкой.
 
-Начисления мастеров рассчитываются только по завершенным визитам. KPI учитывает выручку, загрузку, отмены и no-show.
-
-![Основной дашборд администратора](screenshots/admin/main-dashboard.png)
-
-![KPI и начисления мастеров](screenshots/admin/master-kpi-overview.png)
-
-![Графики KPI мастеров](screenshots/admin/master-kpi-charts.png)
+Начисления мастеров рассчитываются только по завершенным визитам. KPI учитывает выручку, загрузку, отмены и неявки.
 
 ## Основные Экраны
 
-### Онлайн-запись
+Скриншоты добавляются заново в высоком качестве.
+
+### Личный кабинет мастера
+
+Панель мастера показывает записи, смены, ближайших клиентов и начисления.
+
+![Личный кабинет мастера](screenshots/master/master-dashboard.png)
+
+### Онлайн-запись клиента
+
+Экран выбора мастера и свободного времени при создании онлайн-записи.
 
 ![Выбор даты и времени при онлайн-записи](screenshots/booking/date-time-selection.png)
 
-### Управление расписанием
+### Календарь расписания
+
+Календарь используется для управления записями и сменами мастеров.
 
 ![Календарь расписания и смен](screenshots/admin/schedule-calendar.jpeg)
-
-### Учет материалов
-
-![Карточка материала с историей движений](screenshots/admin/material-card.jpeg)
-
-### Отчеты
-
-![Формирование и экспорт отчетов](screenshots/admin/reports-export.jpeg)
-
-### Личный кабинет клиента
-
-![Личный кабинет клиента и программа лояльности](screenshots/client/client-cabinet-loyalty.jpeg)
 
 ## Использованный Стек
 
@@ -211,7 +203,6 @@ beauty-salon-information-system
 │   ├── business-rules
 │   └── architecture
 ├── diagrams
-│   ├── bpmn
 │   ├── uml
 │   ├── erd
 │   ├── dfd

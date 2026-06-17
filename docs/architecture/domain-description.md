@@ -1,18 +1,18 @@
-# Domain Description
+# Описание предметной области
 
-The domain is a small beauty salon focused on nail services: manicure, pedicure and related procedures.
+Предметная область проекта - небольшой салон красоты, специализирующийся на услугах ногтевого сервиса: маникюре, педикюре и сопутствующих процедурах.
 
-Daily salon operations include appointment processing, schedule changes, client communication, service selection, payroll calculation and material stock control. The work involves several participants: administrator, masters, clients and the business owner.
+Ежедневная работа салона включает обработку записей, переносы визитов, коммуникацию с клиентами, выбор услуг, расчет начислений мастеров и контроль остатков материалов. В процессе участвуют администратор, мастера, клиенты и владелец бизнеса.
 
-The most critical operational area is the schedule. It must account for:
+Наиболее критичная операционная область - расписание. При его ведении нужно учитывать:
 
-- service duration;
-- master availability;
-- working shifts and breaks;
-- already created appointments;
-- limited manicure and pedicure workplaces;
-- additional services that increase visit duration.
+- длительность услуг;
+- доступность мастеров;
+- рабочие смены и перерывы;
+- уже созданные записи;
+- ограниченное количество рабочих мест маникюра и педикюра;
+- дополнительные услуги, увеличивающие длительность визита.
 
-Manual management through paper journals, spreadsheets and separate communication channels creates a risk of overlaps, missed updates, duplicated client data and incorrect payroll calculations. These issues become more visible during high-demand periods, when the number of appointments increases and free time slots are limited.
+Ручное управление через бумажные журналы, таблицы и отдельные каналы связи создает риск пересечений, пропущенных изменений, дублирования клиентских данных и ошибок при расчете начислений. Эти проблемы становятся особенно заметны в периоды высокой загрузки, когда количество записей увеличивается, а свободных интервалов остается мало.
 
-The designed information system centralizes these processes in one database and connects booking, schedules, materials, payroll and analytics through a single appointment lifecycle.
+Проектируемая информационная система централизует эти процессы в единой базе данных и связывает запись клиента, расписание, материалы, начисления и аналитику в рамках единого жизненного цикла визита.

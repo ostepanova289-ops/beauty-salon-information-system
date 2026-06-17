@@ -1,24 +1,24 @@
-# Analyst Documentation
+# Документация аналитика
 
-This folder contains portfolio documentation for the information system of a beauty salon / nail studio.
+В этой папке собрана документация по проекту информационной системы управления салоном красоты / студией ногтевого сервиса.
 
-## Requirements
+## Требования
 
-- [Business requirements](requirements/business-requirements.md)
-- [Functional requirements](requirements/functional-requirements.md)
-- [Non-functional requirements](requirements/non-functional-requirements.md)
-- [User roles](requirements/user-roles.md)
-- [AS-IS / TO-BE analysis](requirements/as-is-to-be.md)
+- [Бизнес-требования](requirements/business-requirements.md)
+- [Функциональные требования](requirements/functional-requirements.md)
+- [Нефункциональные требования](requirements/non-functional-requirements.md)
+- [Роли пользователей](requirements/user-roles.md)
+- [AS-IS / TO-BE](requirements/as-is-to-be.md)
 
-## Business Rules
+## Бизнес-правила
 
-- [Business rules](business-rules/business-rules.md)
+- [Бизнес-правила](business-rules/business-rules.md)
 
-## Architecture And Design
+## Архитектура и проектирование
 
-- [Domain description](architecture/domain-description.md)
-- [System architecture](architecture/system-architecture.md)
-- [Database design](architecture/database-design.md)
-- [Analytics and KPI](architecture/analytics-and-kpi.md)
+- [Описание предметной области](architecture/domain-description.md)
+- [Архитектура системы](architecture/system-architecture.md)
+- [Проектирование базы данных](architecture/database-design.md)
+- [Аналитика и KPI](architecture/analytics-and-kpi.md)
 
-All content is based on the attached graduation project materials.
+Содержание подготовлено на основе материалов выпускной квалификационной работы.

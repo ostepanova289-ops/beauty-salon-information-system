@@ -1,29 +1,29 @@
-# Non-Functional Requirements
+# Нефункциональные требования
 
-## Architecture
+## Архитектура
 
-- The system must be implemented as a web application.
-- The system must use Laravel 12 and MySQL according to the project materials.
-- The architecture must support centralized data storage and browser-based access.
+- Система должна быть реализована как веб-приложение.
+- Система должна использовать Laravel 12 и MySQL согласно материалам проекта.
+- Архитектура должна поддерживать централизованное хранение данных и доступ через браузер.
 
-## Adaptability
+## Адаптивность
 
-- The interface must work on devices with different screen sizes, including desktops, tablets and smartphones.
+- Интерфейс должен корректно работать на устройствах с разными размерами экрана: компьютерах, планшетах и смартфонах.
 
-## Security
+## Безопасность
 
-- Access to system sections must depend on the user's role.
-- Passwords must be stored in hashed form.
-- Internal salon data must be available only to authorized users with the required access level.
-- Server-side validation must be used for input checks.
+- Доступ к разделам системы должен зависеть от роли пользователя.
+- Пароли должны храниться в хешированном виде.
+- Внутренние данные салона должны быть доступны только авторизованным пользователям с нужными правами.
+- Проверка входных данных должна выполняться на серверной стороне.
 
-## Data Integrity
+## Целостность данных
 
-- The system must validate appointment time, master shift, breaks and workplace limits before saving appointment data.
-- The system must prevent repeated material write-off for the same completed appointment.
-- The system must maintain relational integrity between appointments, clients, masters, services, materials and schedules.
+- Перед сохранением записи система должна проверять время визита, смену мастера, перерывы и лимиты рабочих мест.
+- Система должна предотвращать повторное списание материалов по одной завершенной записи.
+- Система должна поддерживать целостность связей между записями, клиентами, мастерами, услугами, материалами и расписанием.
 
-## Maintainability And Extensibility
+## Сопровождаемость и расширяемость
 
-- The system architecture must allow adding or changing salon settings and functional modules without redesigning the whole structure.
-- Business logic used in several workflows should be separated from interface templates and reusable across modules.
+- Архитектура системы должна позволять изменять настройки салона и добавлять функциональные модули без переработки всей структуры.
+- Бизнес-логика, используемая в нескольких сценариях, должна быть отделена от шаблонов интерфейса и пригодна для повторного использования.

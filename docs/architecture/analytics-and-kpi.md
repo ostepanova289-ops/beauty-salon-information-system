@@ -1,48 +1,48 @@
-# Analytics And KPI
+# Аналитика и KPI
 
-The analytics module is used for monitoring salon performance and preparing management reports.
+Модуль аналитики используется для контроля показателей салона и подготовки управленческих отчетов.
 
-## Dashboard Metrics
+## Показатели панели
 
-- total revenue;
-- average check;
-- number of appointments;
-- cancellation and no-show rate;
-- master workload;
-- revenue dynamics;
-- booking status distribution;
-- best KPI;
-- master with maximum revenue for the selected period.
+- общая выручка;
+- средний чек;
+- количество записей;
+- процент отмен и неявок;
+- загрузка мастеров;
+- динамика выручки;
+- распределение записей по статусам;
+- лучший KPI;
+- мастер с максимальной выручкой за выбранный период.
 
-## Master Payroll
+## Начисления мастеров
 
-Payroll is calculated only from completed appointments:
-
-```text
-Payroll = Appointment amount * (payout_percent / 100)
-```
-
-The appointment amount includes the main service, additional services and applied discount logic.
-
-## Master Workload
-
-Workload is calculated by comparing occupied hours with scheduled working hours:
+Начисления рассчитываются только по завершенным записям:
 
 ```text
-Workload (%) = Occupied hours / Working hours * 100
+Начисление = Сумма записи * (payout_percent / 100)
 ```
 
-Occupied hours are based on completed appointment duration. Working hours are calculated from shifts, excluding breaks.
+Сумма записи включает основную услугу, дополнительные услуги и примененную скидку.
 
-## Reports
+## Загрузка мастеров
 
-The system supports reports by:
+Загрузка рассчитывается как отношение занятых часов к рабочим часам по расписанию:
 
-- revenue;
-- masters;
-- services;
-- materials;
-- client appointments;
-- loyalty program.
+```text
+Загрузка (%) = Занятые часы / Рабочие часы * 100
+```
 
-Reports can be filtered by period, master, service and appointment status. Export is available in PDF and Excel.
+Занятые часы рассчитываются по длительности завершенных записей. Рабочие часы определяются по сменам с учетом перерывов.
+
+## Отчеты
+
+Система поддерживает отчеты по следующим направлениям:
+
+- выручка;
+- мастера;
+- услуги;
+- материалы;
+- записи клиентов;
+- программа лояльности.
+
+Отчеты можно фильтровать по периоду, мастеру, услуге и статусу записи. Экспорт доступен в PDF и Excel.

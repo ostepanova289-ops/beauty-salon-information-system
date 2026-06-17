@@ -1,35 +1,35 @@
-# Database Design
+# Проектирование базы данных
 
-The project uses a relational database model. This model was selected because one appointment is connected with multiple business objects at the same time: client, master, service, schedule, materials, promo code and analytics.
+В проекте используется реляционная модель данных. Она выбрана потому, что одна запись клиента одновременно связана с несколькими бизнес-объектами: клиентом, мастером, услугой, расписанием, материалами, промокодом и аналитикой.
 
-## Design Principles
+## Принципы проектирования
 
-- Separate storage for clients, users, masters, services and materials.
-- Foreign keys to preserve relationship integrity.
-- Many-to-many tables for services, masters, bookings and material technology cards.
-- Separate material movement history instead of storing only current stock.
-- Separation of user accounts and salon client records.
-- Extensibility for new modules through additional entities and relationships.
+- Раздельное хранение клиентов, пользователей, мастеров, услуг и материалов.
+- Использование внешних ключей для сохранения целостности связей.
+- Таблицы many-to-many для услуг, мастеров, записей и технологических карт материалов.
+- Отдельная история движений материалов вместо хранения только текущего остатка.
+- Разделение учетных записей пользователей и клиентской базы салона.
+- Возможность расширения функциональности через добавление новых сущностей и связей.
 
-## Main Tables
+## Основные таблицы
 
-| Table | Purpose |
+| Таблица | Назначение |
 | --- | --- |
-| `users` | User accounts for administrators, masters and clients with personal cabinet access. |
-| `clients` | Client database with contact data and administrator notes. |
-| `masters` | Master profiles, coefficients, payout percentage and calendar color. |
-| `bookings` | Central appointment table connected with client, master and main service. |
-| `booking_service` | Additional services selected within one appointment. |
-| `services` | Service catalog with duration, price and active/additional service flags. |
-| `service_addons` | Allowed combinations of main and additional services. |
-| `materials` | Material directory with current, minimum and critical stock levels. |
-| `material_service` | Technology cards: materials and usage norms for services. |
-| `material_movements` | History of restock, manual write-off and automatic write-off operations. |
-| `schedules` | Masters' shifts with date, start/end time and breaks. |
-| `master_service` | Services available to specific masters. |
-| `promo_codes` | Promo code discount settings and usage limits. |
-| `salon_settings` | Salon-level limits and booking rules. |
+| `users` | Учетные записи администраторов, мастеров и клиентов с доступом в личный кабинет. |
+| `clients` | Клиентская база с контактными данными и заметками администратора. |
+| `masters` | Профили мастеров, коэффициенты, процент начисления и цвет календаря. |
+| `bookings` | Центральная таблица записей, связанная с клиентом, мастером и основной услугой. |
+| `booking_service` | Дополнительные услуги, выбранные в рамках одной записи. |
+| `services` | Каталог услуг с длительностью, ценой и признаками активности/дополнительной услуги. |
+| `service_addons` | Допустимые комбинации основных и дополнительных услуг. |
+| `materials` | Справочник материалов с текущим, минимальным и критическим остатком. |
+| `material_service` | Технологические карты: материалы и нормы расхода для услуг. |
+| `material_movements` | История пополнений, ручных списаний и автоматических списаний материалов. |
+| `schedules` | Смены мастеров с датой, временем начала/окончания и перерывами. |
+| `master_service` | Услуги, доступные конкретным мастерам. |
+| `promo_codes` | Настройки скидок, сроков действия и лимитов промокодов. |
+| `salon_settings` | Лимиты рабочих мест и правила онлайн-записи. |
 
 ## ERD
 
-![ERD database model](../../diagrams/erd/database-erd.jpeg)
+![ERD базы данных](../../diagrams/erd/database-erd.jpeg)

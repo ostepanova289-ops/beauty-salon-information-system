@@ -1,50 +1,50 @@
-# Functional Requirements
+# Функциональные требования
 
-## Online Booking
+## Онлайн-запись
 
-- The system must allow clients to create online appointments through a web interface.
-- The system must support booking without mandatory registration.
-- The system must allow choosing a main service, additional services, a master, date and free time.
-- The system must support choosing a specific master or an automatic "any available master" option.
-- The system must calculate appointment duration from selected services and the master's duration coefficient.
-- The system must calculate appointment cost using service prices and the master's price coefficient.
-- The system must send a notification after appointment creation when contact data is available.
+- Система должна позволять клиентам создавать записи через веб-интерфейс.
+- Система должна поддерживать запись без обязательной регистрации.
+- Система должна позволять выбрать основную услугу, дополнительные услуги, мастера, дату и свободное время.
+- Система должна поддерживать выбор конкретного мастера или вариант «любой свободный мастер».
+- Система должна рассчитывать длительность записи на основе выбранных услуг и коэффициента длительности мастера.
+- Система должна рассчитывать стоимость записи с учетом цены услуги и коэффициента стоимости мастера.
+- Система должна отправлять уведомление после создания записи при наличии контактных данных.
 
-## Schedule And Workplaces
+## Расписание и рабочие места
 
-- The system must store masters' shifts, working time and breaks.
-- The system must show only free time slots within active shifts.
-- The system must check existing appointments before creating or editing a booking.
-- The system must control separate limits for manicure and pedicure workplaces.
-- The system must prevent creation of shifts or appointments that exceed workplace constraints.
+- Система должна хранить смены мастеров, рабочее время и перерывы.
+- Система должна показывать только свободные интервалы внутри активных смен.
+- Система должна проверять существующие записи перед созданием или редактированием новой записи.
+- Система должна контролировать отдельные лимиты рабочих мест для маникюра и педикюра.
+- Система должна блокировать создание смен или записей, которые нарушают ограничения по рабочим местам.
 
-## Appointments
+## Записи клиентов
 
-- The system must support appointment statuses: new, confirmed, finished, cancelled and no-show.
-- The system must use the finished status as the trigger for material write-off, payroll calculation and analytics updates.
-- The system must exclude cancelled and no-show appointments from completed-visit calculations.
+- Система должна поддерживать статусы записей: новая, подтверждена, выполнена, отменена и неявка.
+- Система должна использовать статус «выполнена» как основание для списания материалов, расчета начислений и обновления аналитики.
+- Система должна исключать отмененные записи и неявки из расчетов по завершенным визитам.
 
-## Clients, Loyalty And Promo Codes
+## Клиенты, лояльность и промокоды
 
-- The system must store client contact data and visit history.
-- The system must calculate loyalty discounts from completed visits.
-- The system must support promo codes with activity status, validity period and usage limits.
-- The system must avoid combining promo code and loyalty discounts.
+- Система должна хранить контактные данные клиентов и историю посещений.
+- Система должна рассчитывать накопительную скидку на основе завершенных визитов.
+- Система должна поддерживать промокоды с признаком активности, сроком действия и лимитами использования.
+- Система не должна суммировать скидку по промокоду и накопительную скидку.
 
-## Services And Materials
+## Услуги и материалы
 
-- The system must maintain a service catalog.
-- The system must support main and additional services.
-- The system must store allowed combinations of main and additional services.
-- The system must maintain material stock records.
-- The system must connect services with materials through technology cards.
-- The system must automatically write off materials after appointment completion.
-- The system must keep a history of material movements.
+- Система должна вести каталог услуг.
+- Система должна поддерживать основные и дополнительные услуги.
+- Система должна хранить допустимые комбинации основных и дополнительных услуг.
+- Система должна вести учет остатков материалов.
+- Система должна связывать услуги с материалами через технологические карты.
+- Система должна автоматически списывать материалы после завершения записи.
+- Система должна хранить историю движений материалов.
 
-## Payroll, KPI And Reports
+## Начисления, KPI и отчеты
 
-- The system must calculate master payroll from completed appointments and individual payout percentage.
-- The system must calculate revenue, average check, workload, cancellations and KPI indicators.
-- The system must provide filters by period, master, service and appointment status.
-- The system must generate management reports.
-- The system must export reports to PDF and Excel.
+- Система должна рассчитывать начисления мастеров по завершенным записям и индивидуальному проценту выплаты.
+- Система должна рассчитывать выручку, средний чек, загрузку, отмены и KPI.
+- Система должна поддерживать фильтры по периоду, мастеру, услуге и статусу записи.
+- Система должна формировать управленческие отчеты.
+- Система должна экспортировать отчеты в PDF и Excel.

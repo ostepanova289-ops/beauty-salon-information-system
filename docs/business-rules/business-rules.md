@@ -1,46 +1,46 @@
-# Business Rules
+# Бизнес-правила
 
-## Appointments And Schedule
+## Записи и расписание
 
-- An appointment can be created only within an active master shift.
-- If a shift is absent, the master is unavailable for booking on the selected date.
-- Two appointments for the same master must not overlap.
-- Time slots shown to the client must be future slots only.
-- Creating appointments in the past is allowed only for the administrator.
-- Appointment duration is calculated from selected procedures and the master's duration coefficient.
-- The minimum time slot step is 15 minutes.
+- Запись может быть создана только в пределах активной смены мастера.
+- Если смена отсутствует, мастер недоступен для записи на выбранную дату.
+- Две записи одного мастера не должны пересекаться по времени.
+- Клиенту должны показываться только будущие интервалы времени.
+- Создание записей задним числом допускается только для администратора.
+- Длительность записи рассчитывается по выбранным процедурам и коэффициенту длительности мастера.
+- Минимальный шаг временного слота составляет 15 минут.
 
-## Workplace Limits
+## Лимиты рабочих мест
 
-- Manicure and pedicure workplace limits are controlled separately.
-- If the workplace limit is reached, creating another matching shift or appointment is blocked.
-- The administrator can change workplace limits through salon settings.
+- Лимиты рабочих мест маникюра и педикюра контролируются отдельно.
+- Если лимит рабочих мест достигнут, создание новой смены или записи соответствующего типа блокируется.
+- Администратор может изменять лимиты рабочих мест через настройки салона.
 
-## Materials
+## Материалы
 
-- After appointment completion, the system writes off materials according to service technology cards.
-- Negative material stock is not allowed.
-- If available stock is lower than the required usage norm, the system writes off available quantity and flags the issue.
-- Only the administrator can manually change material stock.
-- Repeated material write-off for the same appointment must be prevented.
+- После завершения записи система списывает материалы согласно технологическим картам услуг.
+- Отрицательные остатки материалов не допускаются.
+- Если фактический остаток меньше нормы расхода, система списывает доступное количество и фиксирует проблему.
+- Ручное изменение остатков материалов доступно только администратору.
+- Повторное списание материалов по одной записи должно быть предотвращено.
 
-## Appointment Statuses
+## Статусы записей
 
-- Appointment statuses are: new, confirmed, finished, cancelled and no-show.
-- Finished, cancelled and no-show are final statuses.
-- Finished appointments are used for revenue, payroll, KPI, loyalty and material write-off.
-- Cancelled and no-show appointments are excluded from completed-visit calculations.
+- Для записей используются статусы: новая, подтверждена, выполнена, отменена и неявка.
+- Статусы «выполнена», «отменена» и «неявка» считаются финальными.
+- Выполненные записи участвуют в расчете выручки, начислений, KPI, лояльности и списании материалов.
+- Отмененные записи и неявки не участвуют в расчетах по завершенным визитам.
 
-## Promo Codes And Loyalty
+## Промокоды и программа лояльности
 
-- A promo code can be applied only if it is active, valid by date and within usage limits.
-- Loyalty discount is calculated from completed visits.
-- Promo code and loyalty discount are not summed.
-- If a discount is greater than the appointment cost, the final amount must not become negative.
+- Промокод применяется только при активности, действующем сроке и соблюдении лимитов использования.
+- Накопительная скидка рассчитывается по завершенным визитам клиента.
+- Промокод и накопительная скидка не суммируются.
+- Если скидка превышает стоимость записи, итоговая сумма не должна становиться отрицательной.
 
-## Access Control
+## Доступ к данным
 
-- The master can access only own shifts, appointments and payroll data.
-- The client can access only own appointments and personal cabinet data.
-- Administrative settings, financial analytics and other employees' data are restricted from non-administrator roles.
-- Deleting services or masters with active appointments is restricted.
+- Мастер может работать только со своими сменами, записями и начислениями.
+- Клиент может работать только со своими записями и данными личного кабинета.
+- Административные настройки, финансовая аналитика и данные других сотрудников недоступны неадминистративным ролям.
+- Удаление мастеров или услуг с активными записями ограничивается.

@@ -1,41 +1,41 @@
-# User Roles
+# Роли пользователей
 
-## Administrator
+## Администратор
 
-The administrator has full access to the system. This role manages:
+Администратор имеет полный доступ к системе. Для этой роли предусмотрено управление:
 
-- client appointments;
-- masters and schedules;
-- services and technology cards;
-- materials and stock movements;
-- promo codes;
-- salon settings;
-- analytics;
-- management reports and export.
+- записями клиентов;
+- мастерами и расписанием;
+- услугами и технологическими картами;
+- материалами и движениями склада;
+- промокодами;
+- настройками салона;
+- аналитикой;
+- управленческими отчетами и экспортом данных.
 
-The administrator controls workplace availability, client database, payroll indicators and operational reporting.
+Администратор контролирует доступность рабочих мест, клиентскую базу, показатели начислений и операционную отчетность.
 
-## Master
+## Мастер
 
-The master works only with own data. This role can view:
+Мастер работает только со своими данными. Для этой роли доступны:
 
-- own schedule;
-- own shifts;
-- assigned appointments;
-- appointment statuses;
-- payroll and KPI information available in the master area.
+- собственное расписание;
+- собственные смены;
+- назначенные записи;
+- статусы посещений;
+- данные по начислениям и KPI в личном кабинете мастера.
 
-The master does not have access to administrative settings, other employees' data or salon-level financial analytics.
+Мастер не имеет доступа к административным настройкам, данным других сотрудников и финансовой аналитике салона.
 
-## Client
+## Клиент
 
-The client uses the public booking flow and personal cabinet. This role can:
+Клиент использует публичную форму онлайн-записи и личный кабинет. Для этой роли доступны:
 
-- create online appointments;
-- view visit history;
-- cancel active appointments according to system rules;
-- repeat previous appointments;
-- use promo codes;
-- view loyalty program status.
+- создание онлайн-записи;
+- просмотр истории посещений;
+- отмена активных записей согласно правилам системы;
+- повтор предыдущих записей;
+- использование промокодов;
+- просмотр статуса программы лояльности.
 
-The client can access only own appointments and personal data.
+Клиент имеет доступ только к своим записям и персональным данным.

@@ -1,29 +1,29 @@
-# Business Requirements
+# Бизнес-требования
 
-## BR-01. Centralize salon operations
+## BR-01. Централизация процессов салона
 
-The system must combine the main processes of a nail studio in a single web application: online booking, schedule management, client records, material accounting, payroll calculation, analytics and reports.
+Система должна объединять основные процессы студии ногтевого сервиса в одном веб-приложении: онлайн-запись, расписание, клиентскую базу, учет материалов, расчет начислений, аналитику и отчетность.
 
-## BR-02. Reduce manual work for the administrator
+## BR-02. Снижение ручной нагрузки администратора
 
-The system must reduce manual operations related to appointment creation, schedule checking, client data handling, material write-off and report preparation.
+Система должна сокращать количество ручных операций при создании записей, проверке расписания, обработке клиентских данных, списании материалов и подготовке отчетов.
 
-## BR-03. Prevent appointment and workplace conflicts
+## BR-03. Предотвращение конфликтов записей и рабочих мест
 
-The system must help avoid overlapping appointments and exceeding available manicure and pedicure workplace limits.
+Система должна помогать избегать пересечения записей, превышения доступного количества рабочих мест маникюра и педикюра, а также ошибок при распределении мастеров по сменам.
 
-## BR-04. Support nail-studio-specific workflows
+## BR-04. Поддержка специфики nail-студии
 
-The system must account for nail service specifics: shift schedules, service duration, master specialization, additional services, technology cards and material usage norms.
+Система должна учитывать особенности студии ногтевого сервиса: сменный график, длительность процедур, специализацию мастеров, дополнительные услуги, технологические карты и нормы расхода материалов.
 
-## BR-05. Improve accuracy of internal accounting
+## BR-05. Повышение точности внутреннего учета
 
-The system must improve data accuracy in appointment history, material stock, payroll calculations and management analytics.
+Система должна повышать точность данных по истории записей, клиентской базе, остаткам материалов, начислениям мастеров и управленческой аналитике.
 
-## BR-06. Provide management analytics
+## BR-06. Формирование управленческих показателей
 
-The system must provide current indicators for revenue, average check, appointment count, cancellations, master workload, KPI and material usage.
+Система должна предоставлять актуальные показатели по выручке, среднему чеку, количеству записей, отменам, загрузке мастеров, KPI и расходу материалов.
 
-## BR-07. Enable role-based work areas
+## BR-07. Разделение рабочих сценариев по ролям
 
-The system must separate administrator, master and client workflows so each role works only with the data and actions required for its tasks.
+Система должна разделять сценарии администратора, мастера и клиента так, чтобы каждая роль работала только с нужными ей данными и действиями.
